@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Email Validation</title>
+	<script type="text/javascript">
+		function checkEmail()
+			{
+				em=document.getElementById("email").value;
+				atPos=em.indexOf('@');
+				dotPos=em.lastIndexOf('.');
+				if(atPos<3 || atPos+2>dotPos || dotPos+2>=em.length)
+					{
+						alert("email is wrong");
+					}else{
+						alert("email is correct");
+					}
+			}
+
+
+	</script>
+</head>
+<body>
+		Enter Email:-<input type="email" id="email"/></br>
+		<input type="button" value="Check" onclick="checkEmail()"/>
+</body>
+</html>

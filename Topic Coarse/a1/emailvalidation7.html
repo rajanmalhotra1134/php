@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Email Validation7</title>
+	<script type="text/javascript">
+		function checkEmail()
+			{
+				em=document.getElementById("email").value;
+				atPos=em.indexOf('@');
+				dotPos=em.lastIndexOf('.');
+
+				if(atPos<1 || atPos+2>dotPos || dotPos+2>= em.length)
+					{
+						alert("email is wrong");
+					}else{
+						alert("email is correct");
+					}
+					checkPhoneNumber()
+			}
+		function checkPhoneNumber()
+			{
+				pn=document.getElementById("phonenumber").value;
+				if(pn.length>10 || pn.length<10)
+					{
+						alert("phone number is wrong");
+					}else{
+						alert("phone number is correct");
+					}
+			}
+
+	</script>
+</head>
+<body>
+	Enter Email:-<input type="email" id="email"/></br>
+	Enter Phone Number:-<input type="phone number" id="phonenumber"/></br>
+	<input type="button" value="Check Email" onclick="checkEmail()"/>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Email Validation8</title>
+	<script type="text/javascript">
+	// alert("yaha tak thik hai g");
+		function checkFirstName()
+			{
+				fn=document.getElementById("firstname").value;
+				if(fn.length>10 || fn.length<2)
+					{
+						alert("FirstName is wrong");
+					}else{
+						alert("FirstName is correct");
+					}
+					checkLastName()
+			}
+		function checkLastName()
+			{
+				ln=document.getElementById("lastname").value;
+				if(ln.length>10 || ln.length<4)
+					{
+						alert("Lastname is wrong");
+					}else{
+						alert("Lastname is correct");
+					}
+					checkCity()
+			}
+		function checkCity()
+			{
+				ct=document.getElementById("city").value;
+				if(ct.length>30 || ct.length<4)
+					{
+						alert("City name is wrong");
+					}else{
+						alert("City name is correct");
+					}
+					checkPhoneNumber()
+			}
+		function checkPhoneNumber()
+			{
+				pn=document.getElementById("phonenumber").value;
+				if(pn.length>12 || pn.length<8)
+					{
+						alert("Phone number is wrong");
+					}else{
+						alert("Phone number is correct");
+					}
+			}
+	</script>
+</head>
+<body>
+		Enter First Name:-<input type="firstname" id="firstname"/></br>
+		Enter Last Name:-<input type="lastname" id="lastname"/></br>
+		Enter City:-<input type="city" id="city"/></br>
+		Enter Phone Number:-<input type="phonenumber" id="phonenumber"/><br>
+		<input type="button" value="Check" onclick="checkFirstName()"/>
+</body>
+</html>

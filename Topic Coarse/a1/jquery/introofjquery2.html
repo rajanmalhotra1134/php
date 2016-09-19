@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Intro of jQuery</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			});
+			function checkEmpty(inp)
+				{
+					vl=inp.value;
+					if(vl=="")
+						{
+							$(inp).next('span').html("empty");
+						}else{
+							$(inp).next('span').html("box is ok");
+						}
+				}
+
+
+		</script>
+</head>
+<body>
+		<input type="text" id="username" onkeyup="checkEmpty(this)"><span></span>
+		<input type="text" id="username" onkeyup="checkEmpty(this)"><span></span>
+</body>
+</html>

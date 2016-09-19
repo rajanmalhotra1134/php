@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Email Validation5</title>
+	<script type="text/javascript">
+		function checkEmail()
+			{
+				em=document.getElementById("email").value;
+				atPos=em.indexOf('@');
+				dotPos=em.lastIndexOf('.');
+
+				if(atPos<3 || atPos +2> dotPos ||dotPos +2>=em.length)
+					{
+						alert("email is wrong");
+					}else{
+						alert("email is correct");
+					}
+					checkName()
+			}
+		function checkName()
+			{
+				nm=document.getElementById("name").value;
+				if(nm.length>20 || nm.length<4)
+					{
+						alert("name is wrong");
+					}else{
+						alert("name is correct");
+					}
+			}
+	</script>
+</head>
+<body>
+		Enter Email:-<input type="email" id="email"/></br>
+		Enter Name:-<input type="name" id="name"/></br>
+		<input type="button" value="Check Email" onclick="checkEmail()"/>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>New Intro of Jquery</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("input[type=text]").keyup(function(){
+					vl= $(this).val();
+					id =$(this).attr('id');
+					// alert(id)
+					$(this).parent('div').children('span').remove();
+						if(vl=="")
+
+							{
+								elem="<span>" +id+"is Empty</span>";
+								$(this).parent('div').append(elem);
+							}else{
+								elem="<span>" +id+"is ok</span>";
+								$(this).parent('div').append(elem);
+								// alert('OKAY')
+							}
+				});
+			});
+		</script>
+		
+</head>
+<body>
+		Enter Username:-<div><input type="text" id="username"/></div>
+		Enter Email:-<div><input type="text" id="email"/></div>
+		Enter Address:-<div><input type="text" id="address"/></div>
+</body>
+</html>

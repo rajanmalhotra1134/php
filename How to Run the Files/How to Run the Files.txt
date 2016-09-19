@@ -1,0 +1,3 @@
+Open all the files with xap server and all the files are also present in localhost>htdocs>php 
+run the server and open the xamp control panel start three of the the servers and open admin of apache server and open the directoery
+now you can chosse the files 

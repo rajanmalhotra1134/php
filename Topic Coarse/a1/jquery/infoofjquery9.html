@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Info Of Jquery</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).next(function(){
+
+			});
+			function checkEmpty(inp)
+				{
+					vl=inp.value;
+					if(vl=="")
+						{
+							$(inp).next('span').html("Username is empty");
+						}else{
+							$(inp).next('span').html("Username is ok");
+						}
+				}
+		</script>
+</head>
+<body>
+		Enter Username:-<input type="text" id="username" onkeyup="checkEmpty(this)"/><span></span></br>
+		Enter Username:-<input type="text" id="username" onkeyup="checkEmpty(this)"/><span></span></br>
+</body>
+</html>

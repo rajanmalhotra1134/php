@@ -1,0 +1,40 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<title>Email Validation</title>
+		<script type="text/javascript">
+			function checkEmail()
+					{
+						em=document.getElementById("email").value;
+						atPos=em.indexOf('@');
+						dotPos=em.lastIndexOf('.');
+						// alert(atPos);
+						if(atPos < 0 || atPos +2 >dotPos || dotPos + 2 >=em.length)
+							{
+								alert("email is wrong");
+							}else{
+								alert("email is correct");
+							}
+						checkName()
+					}
+				function checkName()
+					{
+						nm=document.getElementById("name").value;
+						if(nm.length>32 || nm.length <5)
+							{
+								alert("name is wrong");
+							}else{
+								alert("name is correct");
+							}
+					}
+
+		</script>
+</head>
+<body>
+		Enter Email:-<input type="email" id="email"/><span class="fa fa-close"></span></br>
+		<!-- Enter Name:-<input type="name" id="name"/></br> -->
+		<input type="button" value="Check Email" onclick="checkEmail()"/>
+
+</body>
+</html>
